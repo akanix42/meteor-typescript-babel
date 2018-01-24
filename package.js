@@ -16,3 +16,10 @@ Package.onUse(function (api) {
   api.use('akryum:npm-check@0.0.4');
   api.imply('ecmascript@0.10.0');
 });
+
+Package.onTest(function (api) {
+  api.use(["tinytest", "underscore@1.0.10"]);
+  api.use(["es5-shim@4.7.1", "nathantreid:typescript-babel", "babel-compiler@7.0.0"]);
+
+  api.addFiles("transpilation-tests.js", "server");
+});
