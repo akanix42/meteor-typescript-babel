@@ -7,8 +7,14 @@ Package.describe({
 
 Package.registerBuildPlugin({
   name: 'compile-typescript',
-  use: ['babel-compiler@7.0.0'],
-  sources: ['plugin.js'],
+  use: [
+    'babel-compiler@7.0.0',
+    'ecmascript@0.10.0',
+  ],
+  sources: [
+    'compiler.js',
+    'plugin.js',
+  ],
 });
 
 Package.onUse(function (api) {

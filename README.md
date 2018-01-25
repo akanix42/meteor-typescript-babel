@@ -10,15 +10,6 @@ meteor add nathantreid:typescript-babel
 
 This will also install the `@babel/preset-typescript` npm package, if you don't already have it installed.
 
-2. Add the typescript preset to your ``.babelrc` file:
-```json
-{
-  "presets": [
-    "@babel/typescript"
-  ],
-}
-```
-
 ## Usage
 
 Create `.ts` or `.tsx` files and write some TypeScript!
