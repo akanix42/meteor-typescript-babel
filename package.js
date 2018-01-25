@@ -1,6 +1,6 @@
 Package.describe({
   name: 'nathantreid:typescript-babel',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Babel compiler plugin for TypeScript files',
   documentation: 'README.md'
 });
