@@ -13,6 +13,7 @@ Package.registerBuildPlugin({
     'ecmascript@0.10.0',
   ],
   sources: [
+    'noOpCompiler.js',
     'compiler.js',
     'plugin.js',
   ],
