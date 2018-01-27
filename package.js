@@ -24,3 +24,7 @@ Package.onUse(function (api) {
   api.use('akryum:npm-check@0.0.4');
   api.imply('ecmascript@0.10.0');
 });
+
+Npm.depends({
+  '@babel/core': '7.0.0-beta.38',
+});
