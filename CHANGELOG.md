@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 This project follows [Semantic Versioning](http://semver.org/).
 
 ## [0.0.4] - 2018-01-26
- - Insert a separate compilation step to run before Meteor's babel-compiler. This is the TypeScript compilation occurs,
+ - Insert a separate compilation step to run before Meteor's babel-compiler. This is where the TypeScript compilation occurs,
    because otherwise reify will throw errors when it tries to parse some TypeScript syntax such as the `as` keyword.
    If the user has @babel/preset-typescript in .babelrc it will no longer have any effect, because the TypeScript preset
    is now being invoked prior to the normal Babel compilation.
