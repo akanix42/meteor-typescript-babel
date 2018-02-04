@@ -21,10 +21,9 @@ Package.registerBuildPlugin({
 
 Package.onUse(function (api) {
   api.use('isobuild:compiler-plugin@1.0.0');
-  api.use('akryum:npm-check@0.0.4');
+  api.use('akryum:npm-check@0.1.0');
+  api.addFiles([
+    'npm.json',
+  ], 'server');
   api.imply('ecmascript@0.10.0');
-});
-
-Npm.depends({
-  '@babel/core': '7.0.0-beta.38',
 });
