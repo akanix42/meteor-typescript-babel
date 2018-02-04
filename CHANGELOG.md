@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 This project follows [Semantic Versioning](http://semver.org/).
 
+## [0.0.6] - 2018-02-03
+ - Fix babel dependencies not being automatically installed (#1)
+
 ## [0.0.5] - 2018-01-29
  - Change the output file extension to .js (index.ts -> index.js) to enable directory imports
 
