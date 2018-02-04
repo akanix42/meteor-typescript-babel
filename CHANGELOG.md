@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 This project follows [Semantic Versioning](http://semver.org/).
 
+## [0.0.5] - 2018-01-29
+ - Change the output file extension to .js (index.ts -> index.js) to enable directory imports
+
 ## [0.0.4] - 2018-01-26
  - Insert a separate compilation step to run before Meteor's babel-compiler. This is where the TypeScript compilation occurs,
    because otherwise reify will throw errors when it tries to parse some TypeScript syntax such as the `as` keyword.
