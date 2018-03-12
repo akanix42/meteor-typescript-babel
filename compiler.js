@@ -9,6 +9,7 @@ const defaultBabelOptions = {
   presets: ['@babel/preset-typescript'],
   plugins: [
     '@babel/plugin-syntax-decorators',
+    '@babel/plugin-syntax-jsx',
   ],
 };
 
