@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project follows [Semantic Versioning](http://semver.org/).
 
+## [0.0.7] - 2018-03-12
+ - Fix decorators not working (#3) - to use decorators please follow the installation and usage instructions here:
+    https://www.npmjs.com/package/@babel/plugin-proposal-decorators
+ - Fix JSX not working (#5) - to use JSX please install and setup your `.babelrc` as usual; as an example, for React
+    please follow the installation and usage instructions here: https://www.npmjs.com/package/@babel/preset-react
+
 ## [0.0.6] - 2018-02-03
  - Fix babel dependencies not being automatically installed (#1)
 
