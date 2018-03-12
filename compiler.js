@@ -7,6 +7,9 @@ const defaultBabelOptions = {
   babelrc: false,
   sourceMaps: true,
   presets: ['@babel/preset-typescript'],
+  plugins: [
+    '@babel/plugin-syntax-decorators',
+  ],
 };
 
 export default class TypeScriptCompiler extends BabelCompiler {
