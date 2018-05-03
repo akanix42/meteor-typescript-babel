@@ -9,8 +9,8 @@ Package.describe({
 Package.registerBuildPlugin({
   name: 'compile-typescript',
   use: [
-    'babel-compiler@7.0.0',
-    'ecmascript@0.10.0',
+    'babel-compiler@7.0.7',
+    'ecmascript@0.10.7',
   ],
   sources: [
     'noOpCompiler.js',
@@ -25,5 +25,5 @@ Package.onUse(function (api) {
   api.addFiles([
     'npm.json',
   ], 'server');
-  api.imply('ecmascript@0.10.0');
+  api.imply('ecmascript@0.10.7');
 });
