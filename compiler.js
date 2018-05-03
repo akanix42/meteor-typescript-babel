@@ -10,6 +10,7 @@ const defaultBabelOptions = {
   plugins: [
     '@babel/plugin-syntax-decorators',
     '@babel/plugin-syntax-jsx',
+    '@babel/plugin-syntax-dynamic-import',
   ],
 };
 
