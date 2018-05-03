@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project follows [Semantic Versioning](http://semver.org/).
 
+## [0.0.8] - 2018-04-19
+ - Add support for `.tsignore` file in project root (using `.gitignore` syntax)
+ - Support dynamic import syntax
+ - Fix Babel source map issues casued by updates to Meteor Babel package
+
 ## [0.0.7] - 2018-03-12
  - Fix decorators not working (#3) - to use decorators please follow the installation and usage instructions here:
     https://www.npmjs.com/package/@babel/plugin-proposal-decorators
