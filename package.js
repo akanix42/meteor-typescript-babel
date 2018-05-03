@@ -27,3 +27,7 @@ Package.onUse(function (api) {
   ], 'server');
   api.imply('ecmascript@0.10.7');
 });
+
+Npm.depends({
+  'ignore': '3.3.7',
+});

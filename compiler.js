@@ -1,5 +1,6 @@
 import { Babel, BabelCompiler } from 'meteor/babel-compiler';
 import { transform } from '@babel/core';
+import ignore from 'ignore';
 
 const defaultBabelOptions = {
   compact: false,
@@ -29,6 +30,27 @@ export default class TypeScriptCompiler extends BabelCompiler {
     babelOptions.inputSourceMap = inputFile.inputSourceMap;
 
     return result;
+  }
+
+  /**
+   * Process all files so we can removed ignored files before handing off to the Babel Compiler
+   **/
+  processFilesForTarget(inputFiles) {
+    inputFiles = this.removeIgnoredFiles(inputFiles);
+    super.processFilesForTarget(inputFiles);
+  }
+
+  removeIgnoredFiles(inputFiles) {
+    const ignoreFile = inputFiles.find(inputFile => inputFile.getBasename() === '.tsignore');
+
+    if (!ignoreFile) {
+      return inputFiles;
+    }
+
+    const ignoredFiles = ignore().add(ignoreFile.getContentsAsString());
+    ignoredFiles.add('**/.tsignore');
+    const filter = ignoredFiles.createFilter();
+    return inputFiles.filter((inputFile) => filter(inputFile.getPathInPackage()));
   }
 
   /**
