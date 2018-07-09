@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project follows [Semantic Versioning](http://semver.org/).
 
+## [0.0.9] - 2018-07-09
+ - Update Babel plugins to version 7.0.0-beta.51
+ - Support new version of Babel decorators plugin by passing { legacy: true } option
+
 ## [0.0.8] - 2018-04-19
  - Add support for `.tsignore` file in project root (using `.gitignore` syntax)
  - Support dynamic import syntax
