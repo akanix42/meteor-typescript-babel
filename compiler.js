@@ -9,7 +9,7 @@ const defaultBabelOptions = {
   sourceMaps: true,
   presets: ['@babel/preset-typescript'],
   plugins: [
-    '@babel/plugin-syntax-decorators',
+    ['@babel/plugin-syntax-decorators', { legacy: true }],
     '@babel/plugin-syntax-jsx',
     '@babel/plugin-syntax-dynamic-import',
   ],
