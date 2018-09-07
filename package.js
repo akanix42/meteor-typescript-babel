@@ -1,6 +1,6 @@
 Package.describe({
   name: 'nathantreid:typescript-babel',
-  version: '0.0.9',
+  version: '0.0.10',
   summary: 'Babel compiler plugin for TypeScript files',
   documentation: 'README.md',
   git: 'https://github.com/nathantreid/meteor-typescript-babel.git',
