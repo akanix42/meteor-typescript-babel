@@ -4,6 +4,5 @@ export default class NoOpCompiler {
      *  This compiler is intended to suppress d.ts files.
      *  Hence, nothing happens here.
      */
-
   }
 }

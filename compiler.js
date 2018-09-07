@@ -5,7 +5,7 @@ import ignore from 'ignore';
 export default class TypeScriptCompiler extends BabelCompiler {
   constructor() {
     super({
-      react: true
+      react: true,
     });
   }
 
@@ -34,7 +34,9 @@ export default class TypeScriptCompiler extends BabelCompiler {
   }
 
   removeIgnoredFiles(inputFiles) {
-    const ignoreFile = inputFiles.find(inputFile => inputFile.getBasename() === '.tsignore');
+    const ignoreFile = inputFiles.find(
+      (inputFile) => inputFile.getBasename() === '.tsignore',
+    );
 
     if (!ignoreFile) {
       return inputFiles;
@@ -43,7 +45,9 @@ export default class TypeScriptCompiler extends BabelCompiler {
     const ignoredFiles = ignore().add(ignoreFile.getContentsAsString());
     ignoredFiles.add('**/.tsignore');
     const filter = ignoredFiles.createFilter();
-    return inputFiles.filter((inputFile) => filter(inputFile.getPathInPackage()));
+    return inputFiles.filter((inputFile) =>
+      filter(inputFile.getPathInPackage()),
+    );
   }
 
   processOneFileForTarget(inputFile) {
