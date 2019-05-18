@@ -1,0 +1,26 @@
+{
+  "name": "meteor-typescript-babel",
+  "version": "1.0.1",
+  "description": "Babel TypeScript Compiler for Meteor",
+  "devDependencies": {
+    "prettier": "^1.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathantreid/meteor-typescript-babel.git"
+  },
+  "keywords": [
+    "meteor",
+    "typescript",
+    "babel",
+    "compile",
+    "transpile"
+  ],
+  "author": "Nathan Reid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathantreid/meteor-typescript-babel/issues"
+  },
+  "homepage": "https://github.com/nathantreid/meteor-typescript-babel",
+  "private": true
+}

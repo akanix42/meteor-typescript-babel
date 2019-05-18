@@ -58,3 +58,5 @@ Command to fix:
 meteor npm i -D @babel/plugin-syntax-decorators@7.0.0-beta.38 @babel/plugin-syntax-dynamic-import@7.0.0-beta.38
 ```
 
+## Contributing
+Pull requests are encouraged! [Prettier](https://prettier.io/) is used for formatting.
