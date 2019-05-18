@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 This project follows [Semantic Versioning](http://semver.org/).
 
+## [1.0.1] - 2019-05-18
+ - Update dependencies; likely only compatible with Meteor 1.8+
+
 ## [0.0.10] - 2018-09-06
  - By directly using the Babel Typescript plugin instead of the preset, we no longer receive reify errors.
    As a result, the extra transpilation step has been removed, which greatly simplifies this plugin.
