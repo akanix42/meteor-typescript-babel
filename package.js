@@ -8,15 +8,16 @@ Package.describe({
 
 Package.registerBuildPlugin({
   name: 'compile-typescript',
-  use: ['babel-compiler@7.0.7', 'ecmascript@0.10.7'],
+  use: ['babel-compiler@7.3.4', 'ecmascript@0.12.7'],
   sources: ['noOpCompiler.js', 'compiler.js', 'plugin.js'],
 });
 
 Package.onUse(function(api) {
+  api.versionsFrom('1.8');
   api.use('isobuild:compiler-plugin@1.0.0');
-  api.use('akryum:npm-check@0.1.0');
+  api.use('akryum:npm-check@0.1.2');
   api.addFiles(['npm.json'], 'server');
-  api.imply('ecmascript@0.10.7');
+  api.imply('ecmascript@0.12.7');
 });
 
 Npm.depends({

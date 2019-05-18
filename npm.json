@@ -1,5 +1,5 @@
 {
   "devDependencies": {
-    "@babel/plugin-transform-typescript": "^7.0.0-beta.51"
+    "@babel/plugin-transform-typescript": "^7.4.4"
   }
 }
