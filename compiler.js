@@ -19,6 +19,8 @@ export default class TypeScriptCompiler extends BabelCompiler {
       cacheDeps,
     );
 
+    babelOptions.plugins = babelOptions.plugins || [];
+
     babelOptions.plugins.unshift(
       inputFile.require('@babel/plugin-transform-typescript'),
     );
@@ -52,7 +54,9 @@ export default class TypeScriptCompiler extends BabelCompiler {
 
   processOneFileForTarget(inputFile) {
     const result = super.processOneFileForTarget(inputFile);
-    result.path = result.path.replace(/\.ts(x)?/, '.js$1');
-    return result;
+    if (result) {
+      result.path = result.path.replace(/\.ts(x)?/, '.js$1');
+      return result;
+    }
   }
 }
